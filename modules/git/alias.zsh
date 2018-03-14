@@ -160,12 +160,12 @@ if ! zstyle -t ':prezto:module:git:alias' skip 'yes'; then
   alias gFsx='git flow support delete'
 
   # Grep (g)
-  alias gg='git grep'
-  alias ggi='git grep --ignore-case'
-  alias ggl='git grep --files-with-matches'
-  alias ggL='git grep --files-without-matches'
-  alias ggv='git grep --invert-match'
-  alias ggw='git grep --word-regexp'
+  alias gg='git grep --break --heading $1'
+  alias ggi='gg --ignore-case'
+  alias ggl='gg --files-with-matches'
+  alias ggL='gg --files-without-matches'
+  alias ggv='gg --invert-match'
+  alias ggw='gg --word-regexp'
 
   # Index (i)
   alias gia='git add'
